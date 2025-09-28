@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Courses - Learn Anything, On Your Schedule | Udemy</title>
+    <!-- <link rel="shortcut icon" href=""> -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/staticx/udemy/images/v8/favicon-16x16.png">
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" id="firstNav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="padding: 10px 0px 10px 12px;"> <img
+                    src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" alt="Udemy" width="91"
+                    height="34" loading="lazy"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link " style="margin-left: -10px;" href="#">Explore</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input id="Search-Input" class="form-control me-2 " type="search"
+                    placeholder="     Search for any thing" aria-label="Search">
+                <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+            </form>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a id="Udemy-Business-Link" class="nav-link active" aria-current="page" href="#">Udemy
+                            Business</a>
+                        <div id="Udemy-Business" class="hidden link-content">
+                            <p>Get Your Team Access To Over 30,000 Top Udemy Cources, Anytime, Anywhere</p>
+                            <button type="button" class="btn btn-primary">Try Udemy Business</button>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a id="Teatct-On-Udemy-Link" class="nav-link active" href="#">Teach On Udemy</a>
+                        <div id="Teatct-On-Udemy" class="hidden link-content">
+                            <p>Get Your Team Access To Over 30,000 Top Udemy Cources, Anytime, Anywhere</p>
+                            <button type="button" class="btn btn-primary">Try Udemy Business</button>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a id="My-Learning-Link" class="nav-link active" href="#">My Learning</a>
+                        <div id="My-Learning" class="hidden link-content">
+                            <p>Get Your Team Access To Over 30,000 Top Udemy Cources, Anytime, Anywhere</p>
+                            <button type="button" class="btn btn-primary">Try Udemy Business</button>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a id="Favorat-Link" class="nav-link" href="#"><i class="fa-regular fa-heart"></i></a>
+                        <div id="Favorat" class="hidden link-content">
+                            <p>Get Your Team Access To Over 30,000 Top Udemy Cources, Anytime, Anywhere</p>
+                            <button type="button" class="btn btn-primary">Try Udemy Business</button>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a id="Cart-Link" class="nav-link active" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <div id="Cart" class="hidden link-content">
+                            <p>Get Your Team Access To Over 30,000 Top Udemy Cources, Anytime, Anywhere</p>
+                            <button type="button" class="btn btn-primary">Try Udemy Business</button>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a id="Notification-Link" class="nav-link active" href="#"><i
+                                class="fa-regular fa-bell"></i></a>
+                        <div id="Notification" class="hidden link-content">
+                            <p>Get Your Team Access To Over 30,000 Top Udemy Cources, Anytime, Anywhere</p>
+                            <button type="button" class="btn btn-primary">Try Udemy Business</button>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light " id="secondNav">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 " id="secNav">
+                    <li class="categoryShow nav-item">
+                        <a onmouseover="displayCategory(this)" class="nav-link" aria-current="page"
+                            href="#">Development</a>
+                    </li>
+                    <li class="nav-item">
+                        <a onmouseover="displayCategory(this)" class="nav-link" href="#">Business</a>
+                    </li>
+                    <li class="nav-item">
+                        <a onmouseover="displayCategory(this)" class="nav-link" href="#">Finance&Accounting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a onmouseover="displayCategory(this)" class="nav-link" href="#">IT&Software</a>
+                    </li>
+                    <li class="nav-item">
+                        <a onmouseover="displayCategory(this)" class="nav-link" href="#">Office Productivity</a>
+                    </li>
+                    <li class="nav-item">
+                        <a onmouseover="displayCategory(this)" class="nav-link" aria-current="page" href="#">Personal
+                            Development</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a onmouseover="displayCategory(this)" class="nav-link" href="#">Design</a>
+                    </li>
+                    <li class="nav-item">
+                        <a onmouseover="displayCategory(this)" class="nav-link" href="#">Marketing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a onmouseover="displayCategory(this)" class="nav-link" href="#">Helth&Fetness</a>
+                    </li>
+                    <li class="nav-item">
+                        <a onmouseover="displayCategory(this)" class="nav-link" aria-current="page" href="#">Music</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <ul class="category navbar-nav me-auto mb-2 mb-lg-0 " id="Development">
+            <li class="nav-item"><a class="nav-link" href="#">Web Development</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Mobile Development</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Programming Language</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Game Development</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Database Design&Development</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Software Testing</a></li>
+        </ul>
+        <ul class="category navbar-nav me-auto mb-2 mb-lg-0 " id="Business">
+            <li class="nav-item"><a class="nav-link" href="#">Enterpreneurship</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Communication</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Management</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Sales</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Business Srategy</a></li>
+        </ul>
+        <ul class="category navbar-nav me-auto mb-2 mb-lg-0 " id="Finance&Accounting">
+            <li class="nav-item"><a class="nav-link" href="#">Accounting &Bookkeeping</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Cryptocurrency &Blockchain</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Finance</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Finanial Modeling &Analysis</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Investing &Traiding</a></li>
+        </ul>
+        <ul class="category navbar-nav me-auto mb-2 mb-lg-0 " id="IT&Software">
+            <li class="nav-item"><a class="nav-link" href="#">Web Development</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Mobile Development</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Programming Language</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Game Development</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Database Design&Development</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Software Testing</a></li>
+        </ul>
+        <ul class="category navbar-nav me-auto mb-2 mb-lg-0 " id="Office-Productivity">
+            <li class="nav-item"><a class="nav-link" href="#">Web Development</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Mobile Development</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Programming Language</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Game Development</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Database Design&Development</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Software Testing</a></li>
+        </ul>
+        <ul class="category navbar-nav me-auto mb-2 mb-lg-0 " id="Personal-Development">
+            <li class="nav-item"><a class="nav-link" href="#">Web Development</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Mobile Development</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Programming Language</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Game Development</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Database Design&Development</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Software Testing</a></li>
+        </ul>
+        <ul class="category navbar-nav me-auto mb-2 mb-lg-0 " id="Design">
+            <li class="nav-item"><a class="nav-link" href="#">Web Development</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Mobile Development</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Programming Language</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Game Development</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Database Design&Development</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Software Testing</a></li>
+        </ul>
+        <ul class="category navbar-nav me-auto mb-2 mb-lg-0 " id="Marketing">
+            <li class="nav-item"><a class="nav-link" href="#">Web Development</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Mobile Development</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Programming Language</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Game Development</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Database Design&Development</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Software Testing</a></li>
+        </ul>
+        <ul class="category navbar-nav me-auto mb-2 mb-lg-0 " id="Helth&Fetness">
+            <li class="nav-item"><a class="nav-link" href="#">Web Development</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Mobile Development</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Programming Language</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Game Development</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Database Design&Development</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Software Testing</a></li>
+        </ul>
+        <ul class="category navbar-nav me-auto mb-2 mb-lg-0 " id="Music">
+            <li class="nav-item"><a class="nav-link" href="#">Web Development</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Mobile Development</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Programming Language</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Game Development</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Database Design&Development</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Software Testing</a></li>
+        </ul>
+
+    </nav>
+
+    <main>
+
+        <div style="padding: 16px; margin: -35px 20px 20px;">
+            <img style="width: 4.5rem; height: 4.5rem; border-radius: 50%; margin-top: 20px;"
+                src="resources/صورتي مقصوصjpg.jpg" alt="">
+            <div style="display: inline-flex; flex-direction: column; line-height: 1.6;padding-left: 10px;">
+                <span style="font-size: 25px; font-weight: bold; margin-left: 10px;">Welcome Back, Abdullah</span>
+                <a style="color: rgb(99, 72, 161) !important; font-weight: 700;" href="#">Add Ocupation And
+                    Interests</a>
+            </div>
+        </div>
+
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" width="1340" height="400" alt
+                        src="https://img-c.udemycdn.com/notices/featured_carousel_slide/image/e0e0a4a0-6e92-4f5a-b80b-2df879a97bde.png"
+                        loading="eager">
+                    <div class="Img-Caption">
+                        <h1>Tack Your Skills To The Next Level</h1>
+                        <p>Thanks for being a loyal learner. Treat yourself to unlimited learning with 25% off your
+                            first year of an annual Personal Plan subscription.</p>
+                        <button>Get Your Offer</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" width="1340" height="400" alt
+                        src="https://img-c.udemycdn.com/notices/featured_carousel_slide/image/2b4dae04-f107-4ae6-8188-a57ca45897cb.jpg"
+                        loading="lazy">
+                    <div class="Img-Caption">
+                        <h1>Udemy Clone Website By Abdullah</h1>
+                        <p>Trust ratings and reviews to make a smarter choice. Get started with our top-rated courses.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" width="1340" height="400" alt
+                        src="https://img-c.udemycdn.com/notices/featured_carousel_slide/image/487fb3b7-4b6e-4c2f-a3fe-67eb51016502.jpg"
+                        loading="lazy">
+                    <div class="Img-Caption">
+                        <h1>Learn from anywhere</h1>
+                        <p>On the couch, from the backyard, or on your commute. <a href="#">Our app</a> lets you decide.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div id="Udemy-Business-Alert">
+            <div>
+                <div style="display: inline; font-weight: bold;">
+                    Training 2 or more people?
+                </div>
+                <div style="display: inline;">
+                    Get your team access to Udemy's top 30,000+ courses
+                </div>
+            </div>
+            <div>
+                <button id="Alert-Btn">Get Udemy Business</button>
+                <button id="Dismiss-Btn">Dismiss</button>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="carousel-container">
+            <button class="btn prev1">&#10094;</button>
+            <div class="carousel-track" id="track1">
+                <!-- كرر الكروت حسب الحاجة -->
+                <div class="course-card">
+                    <img src="resources/Products/950390_270f_3.jpg" alt="Course Image">
+                    <div class="course-title">[NEW] Ultimate AWS Certified Cloud Practitioner CLF-C02</div>
+                    <div class="course-instructor">Stephane Maarek | AWS Certified Cloud...</div>
+                    <div>
+                        <span class="rating">4.6</span>
+                        <span class="text-warning">★ ★ ★ ★ ★</span>
+                        <span class="text-muted">(263,703)</span>
+                    </div>
+                    <div>
+                        <span class="price">E£259.99</span>
+                        <span class="old-price">E£379.99</span>
+                    </div>
+                    <div class="bestseller-badge">Bestseller</div>
+                </div>
+
+                <!-- كرر كروت تانية هنا -->
+                <div class="course-card">
+                    <img src="resources/Products/950390_270f_3.jpg" alt="Course Image">
+                    <div class="course-title">Another AWS Course</div>
+                    <div class="course-instructor">John Doe</div>
+                    <div>
+                        <span class="rating">4.6</span>
+                        <span class="text-warning">★ ★ ★ ★ ★</span>
+                        <span class="text-muted">(150,000)</span>
+                    </div>
+                    <div>
+                        <span class="price">E£199.99</span>
+                        <span class="old-price">E£299.99</span>
+                    </div>
+                    <div class="bestseller-badge">Bestseller</div>
+                </div>
+                <div class="course-card">
+                    <img src="resources/Products/950390_270f_3.jpg" alt="Course Image">
+                    <div class="course-title">Another AWS Course</div>
+                    <div class="course-instructor">John Doe</div>
+                    <div>
+                        <span class="rating">4.6</span>
+                        <span class="text-warning">★ ★ ★ ★ ★</span>
+                        <span class="text-muted">(150,000)</span>
+                    </div>
+                    <div>
+                        <span class="price">E£199.99</span>
+                        <span class="old-price">E£299.99</span>
+                    </div>
+                    <div class="bestseller-badge">Bestseller</div>
+                </div>
+
+                <div class="course-card">
+                    <img src="resources/Products/950390_270f_3.jpg" alt="Course Image">
+                    <div class="course-title">Another AWS Course</div>
+                    <div class="course-instructor">John Doe</div>
+                    <div>
+                        <span class="rating">4.6</span>
+                        <span class="text-warning">★ ★ ★ ★ ★</span>
+                        <span class="text-muted">(150,000)</span>
+                    </div>
+                    <div>
+                        <span class="price">E£199.99</span>
+                        <span class="old-price">E£299.99</span>
+                    </div>
+                    <div class="bestseller-badge">Bestseller</div>
+                </div>
+
+                <div class="course-card">
+                    <img src="resources/Products/950390_270f_3.jpg" alt="Course Image">
+                    <div class="course-title">Another AWS Course</div>
+                    <div class="course-instructor">John Doe</div>
+                    <div>
+                        <span class="rating">4.6</span>
+                        <span class="text-warning">★ ★ ★ ★ ★</span>
+                        <span class="text-muted">(150,000)</span>
+                    </div>
+                    <div>
+                        <span class="price">E£199.99</span>
+                        <span class="old-price">E£299.99</span>
+                    </div>
+                    <div class="bestseller-badge">Bestseller</div>
+                </div>
+
+                <div class="course-card">
+                    <img src="resources/Products/950390_270f_3.jpg" alt="Course Image">
+                    <div class="course-title">Another AWS Course</div>
+                    <div class="course-instructor">John Doe</div>
+                    <div>
+                        <span class="rating">4.6</span>
+                        <span class="text-warning">★ ★ ★ ★ ★</span>
+                        <span class="text-muted">(150,000)</span>
+                    </div>
+                    <div>
+                        <span class="price">E£199.99</span>
+                        <span class="old-price">E£299.99</span>
+                    </div>
+                    <div class="bestseller-badge">Bestseller</div>
+                </div>
+
+                <div class="course-card">
+                    <img src="resources/Products/950390_270f_3.jpg" alt="Course Image">
+                    <div class="course-title">Another AWS Course</div>
+                    <div class="course-instructor">John Doe</div>
+                    <div>
+                        <span class="rating">4.6</span>
+                        <span class="text-warning">★ ★ ★ ★ ★</span>
+                        <span class="text-muted">(150,000)</span>
+                    </div>
+                    <div>
+                        <span class="price">E£199.99</span>
+                        <span class="old-price">E£299.99</span>
+                    </div>
+                    <div class="bestseller-badge">Bestseller</div>
+                </div>
+
+                <div class="course-card">
+                    <img src="resources/Products/950390_270f_3.jpg" alt="Course Image">
+                    <div class="course-title">Another AWS Course</div>
+                    <div class="course-instructor">John Doe</div>
+                    <div>
+                        <span class="rating">4.6</span>
+                        <span class="text-warning">★ ★ ★ ★ ★</span>
+                        <span class="text-muted">(150,000)</span>
+                    </div>
+                    <div>
+                        <span class="price">E£199.99</span>
+                        <span class="old-price">E£299.99</span>
+                    </div>
+                    <div class="bestseller-badge">Bestseller</div>
+                </div>
+                <div class="course-card">
+                    <img src="resources/Products/950390_270f_3.jpg" alt="Course Image">
+                    <div class="course-title">Another AWS Course</div>
+                    <div class="course-instructor">John Doe</div>
+                    <div>
+                        <span class="rating">4.6</span>
+                        <span class="text-warning">★ ★ ★ ★ ★</span>
+                        <span class="text-muted">(150,000)</span>
+                    </div>
+                    <div>
+                        <span class="price">E£199.99</span>
+                        <span class="old-price">E£299.99</span>
+                    </div>
+                    <div class="bestseller-badge">Bestseller</div>
+                </div>
+                <div class="course-card">
+                    <img src="resources/Products/950390_270f_3.jpg" alt="Course Image">
+                    <div class="course-title">Another AWS Course</div>
+                    <div class="course-instructor">John Doe</div>
+                    <div>
+                        <span class="rating">4.6</span>
+                        <span class="text-warning">★ ★ ★ ★ ★</span>
+                        <span class="text-muted">(150,000)</span>
+                    </div>
+                    <div>
+                        <span class="price">E£199.99</span>
+                        <span class="old-price">E£299.99</span>
+                    </div>
+                    <div class="bestseller-badge">Bestseller</div>
+                </div>
+                <div class="course-card">
+                    <img src="resources/Products/950390_270f_3.jpg" alt="Course Image">
+                    <div class="course-title">Another AWS Course</div>
+                    <div class="course-instructor">John Doe</div>
+                    <div>
+                        <span class="rating">4.6</span>
+                        <span class="text-warning">★ ★ ★ ★ ★</span>
+                        <span class="text-muted">(150,000)</span>
+                    </div>
+                    <div>
+                        <span class="price">E£199.99</span>
+                        <span class="old-price">E£299.99</span>
+                    </div>
+                    <div class="bestseller-badge">Bestseller</div>
+                </div>
+                <div class="course-card">
+                    <img src="resources/Products/950390_270f_3.jpg" alt="Course Image">
+                    <div class="course-title">Another AWS Course</div>
+                    <div class="course-instructor">John Doe</div>
+                    <div>
+                        <span class="rating">4.6</span>
+                        <span class="text-warning">★ ★ ★ ★ ★</span>
+                        <span class="text-muted">(150,000)</span>
+                    </div>
+                    <div>
+                        <span class="price">E£199.99</span>
+                        <span class="old-price">E£299.99</span>
+                    </div>
+                    <div class="bestseller-badge">Bestseller</div>
+                </div> 
+                <div class="course-card">
+                    <img src="resources/Products/950390_270f_3.jpg" alt="Course Image">
+                    <div class="course-title">Another AWS Course</div>
+                    <div class="course-instructor">John Doe</div>
+                    <div>
+                        <span class="rating">4.6</span>
+                        <span class="text-warning">★ ★ ★ ★ ★</span>
+                        <span class="text-muted">(150,000)</span>
+                    </div>
+                    <div>
+                        <span class="price">E£199.99</span>
+                        <span class="old-price">E£299.99</span>
+                    </div>
+                    <div class="bestseller-badge">Bestseller</div>
+                </div>
+
+
+                <!-- زود لحد 20 كارت -->
+            </div>
+            <button class="btn next1">&#10095;</button>
+        </div>
+
+
+    </main>
+
+
+
+
+
+
+    <footer>
+        <!-- TOP SECTION -->
+        <div class="top-section">
+            <div>
+                <p><strong>Teach the world online</strong></p>
+                <p>Create an online video course, reach students across the globe, and earn money</p>
+            </div>
+            <button>Teach on Udemy</button>
+        </div>
+
+        <!-- GRID LINKS SECTION -->
+        <div class="footer-links">
+            <div>
+                <h4>In-demand Careers</h4>
+                <a href="#">Data Scientist</a>
+                <a href="#">Full Stack Web Developer</a>
+                <a href="#">Cloud Engineer</a>
+                <a href="#">Project Manager</a>
+            </div>
+
+            <div>
+                <h4>Web Development</h4>
+                <a href="#">JavaScript</a>
+                <a href="#">React JS</a>
+                <a href="#">Angular</a>
+            </div>
+
+            <div>
+                <h4>IT Certifications</h4>
+                <a href="#">Amazon AWS</a>
+                <a href="#">Microsoft Azure</a>
+                <a href="#">Kubernetes</a>
+            </div>
+
+            <div>
+                <h4>Leadership</h4>
+                <a href="#">Management Skills</a>
+                <a href="#">Project Management</a>
+            </div>
+
+            <div>
+                <h4>Business Analytics & Intelligence</h4>
+                <a href="#">Microsoft Excel</a>
+                <a href="#">SQL</a>
+                <a href="#">Power BI</a>
+            </div>
+        </div>
+
+        <!-- BOTTOM SECTION -->
+        <div class="bottom-section">
+            <div class="bottom-left">
+                <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy-inverted.svg" alt="Udemy Logo">
+                <a href="#">About</a>
+                <a href="#">Careers</a>
+                <a href="#">Blog</a>
+            </div>
+
+            <div class="bottom-right">
+                <button><i class="fa-solid fa-globe"></i> English</button>
+            </div>
+        </div>
+
+        <div class="bottom-copy">&copy; 2025 Udemy, Inc.</div>
+    </footer>
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
